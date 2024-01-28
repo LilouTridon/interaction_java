@@ -1,0 +1,85 @@
+*{
+    margin: 1%;
+}
+
+h1{
+    background-color: mediumaquamarine;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    line-height: 2em;
+}
+
+
+
+.error {
+    color: red;
+}
+
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: darkcyan;
+    color: white;
+}
+
+
+.burger-menu {
+    cursor: pointer;
+    display: none; 
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s; 
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 10000px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        left: 120px;
+        background-color: darkcyan;
+        width: auto;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+

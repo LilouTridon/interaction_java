@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site chaton</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="menu-container">
+
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index1.html">Accueil</a></li>
+            <li><a href="index.html">Compte</a></li>
+            
+        </ul>
+    </div>
+
+    <button>Darkmode</button>
+    <h2>photos de chatons :p</h2>
+    <swiper-container class="Swiper" navigation="true">
+        <legend>chaton en gros plan</legend>
+        <swiper-slide>    <img src="img/chaton.jpg" alt="img1" class="img"></swiper-slide>
+        <legend>chaton à la salle</legend>
+        <swiper-slide><img src="img/chatongym.jpg" alt="img1" class="img"></swiper-slide>
+        <legend>chaton qui conduit</legend>
+        <swiper-slide><img src="img/chatonvoiture.jpg" alt="img1" class="img"></swiper-slide>
+    </swiper-container>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        
+        <ul class="nav-menu">
+            <li><a href="index1.html">Accueil</a></li>
+            <li><a href="index.html">Compte</a></li>
+        </ul>
+    </div>
+    <h1>Créer un compte</h1>
+
+    <button>Darkmode</button>
+    <form action="">
+        <fieldset>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" id="mdp" required>
+            <p id="motdepasseError" class="error"></p> <!--msg erreur-->
+            <label for="mail">Email</label>
+            <input type="email" id="mail" required>
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>Genre</legend>
+            <label for="f">Femme</label>
+            <input type="radio" name="genre" id="f"  value="Femme">
+            <label for="h">Homme</label>
+            <input type="radio" name="genre" id="h" value="Homme">
+            <p id="genreError" class="error"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pays</legend>
+            <select name="" id="liste">
+                <option value="France">France</option>
+                <option value="Belgique">Belgique</option>
+                <option value="Suisse">Suisse</option>
+                <option value="Espagne">Espagne</option>
+            </select>
+        </fieldset>
+
+        <input type="checkbox" id="abonnement" name="abonnement" value="s'abonner">
+        <label for="abonnement">S'abonner à la newsletter</label>
+
+        <input type="submit" value="Valider" id="valider">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
